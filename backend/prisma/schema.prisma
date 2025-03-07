@@ -12,3 +12,36 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model User {
+  id        String   @id @default(uuid())
+  username  String
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now())
+
+  Expense Expense[]
+  Income  Income[]
+}
+
+model Expense {
+  id          String   @id @default(uuid())
+  icon        String
+  category    String
+  amount      Int
+  dateCreated DateTime @default(now())
+
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+}
+
+model Income {
+  id          String   @id @default(uuid())
+  icon        String
+  source      String
+  amount      Int
+  dateCreated DateTime @default(now())
+
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+}
