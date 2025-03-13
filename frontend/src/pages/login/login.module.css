@@ -1,0 +1,89 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 520px;
+    position: absolute;
+    padding: 0 20px;
+    left: 50%;
+    top: 50%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    background-color: #fafaff;
+}
+
+.logo {
+    width: 200px;
+}
+
+.soustitre {
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.dataInput {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 10px;
+}
+
+.dataInput label {
+    margin-top: 8px;
+    margin-bottom: 4px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.mdpOublie {
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+
+.createaccount {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.createaccount span {
+    color: #5C73DB; 
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: color 0.3s ease;
+}
+
+.createaccount span:hover {
+    color: #4154B3;
+    
+}
+
+.errors {
+    margin-top: 6px;
+    font-size: 14px;
+    color: #991B1B;
+}
+
+
+
+/* Responseive */
+
+@media (max-width: 1024px) {
+    
+}
+  
+/* Tablet */
+@media (max-width: 768px) {
+    
+}
+  
+/* Mobile */
+@media (max-width: 480px) {
+    
+}

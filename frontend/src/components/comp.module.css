@@ -1,0 +1,40 @@
+.inputWrapper {
+    position: relative;
+    width: 92%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #E4E4E7;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.inputWrapper:focus-within {
+    border-color: #5C73DB;
+}
+
+.c_input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: black;
+    outline: none;
+    padding-right: 20px; /* Space for the icon */
+}
+
+.eyeIcon {
+    height: 16px;
+    cursor: pointer;
+    color: #757575;
+}
+
+.btn {
+    width: 80%;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    background-color: #5C73DB;
+    cursor: pointer;
+}
+
+

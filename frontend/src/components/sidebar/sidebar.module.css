@@ -1,0 +1,74 @@
+.user {
+    padding: 10px;
+}
+
+.links {
+    padding: 30px;
+}
+
+.logout {
+    color: #bf2a2a;
+    transition: all 0.05s ease;
+}
+
+.logout:hover {
+    background-color: #bf2a2a54;
+    border-radius: 12px;
+    color: #e72a2a;
+}
+
+.links ul  {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+}
+
+.links ul li {
+    padding: 10px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.05s ease;
+}
+
+.links ul li:not(:last-child):hover {
+    background-color: #4255d065;
+    border-radius: 12px;
+}
+
+.links ul li a {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none; 
+}
+
+.user_c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.email {
+    font-size: 14px;
+}
+
+.circul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #4763E4;
+}
+
+.active {
+    background-color: #4256D0;
+    border-radius: 12px;
+}

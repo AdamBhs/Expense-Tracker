@@ -1,11 +1,11 @@
 import jwt from "jsonwebtoken";
 
 export const protect = (req, res, next) => {
-    const bearer = req.header.authorization;
-
+    const bearer = req.headers.authorization;
+    
     if(!bearer) {
         res.status(401);
-        res.json({message: 'not authorized'});
+        res.json({message: bearer});
         return;
     }
 

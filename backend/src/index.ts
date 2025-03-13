@@ -8,6 +8,11 @@ import authRouter from './routes/authRouter';
 
 const app = express();
 
+app.use(cors({
+    origin: 'http://localhost:5173',
+    allowedHeaders: 'Content-Type,Authorization',
+}));
+
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
