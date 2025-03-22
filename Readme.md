@@ -12,4 +12,4 @@
 
 ### Dashboard
 
-![Dashboard](./ProjectScreen/Dashboard.png)
+![Dashboard](./assets/Dashboard.png)
