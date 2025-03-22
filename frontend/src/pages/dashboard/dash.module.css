@@ -1,3 +1,62 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .total_c {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total_c .total_p {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 16px 16px 16px 26px;
+    width: 330px;
+}
+
+.logo_t {
+    display: flex;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px; 
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+  
+}
+
+.desc_t p {
+    color: #A1A1AA;
+    font-size: 14px;
+}
+
+.desc_t h3 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.part_2 {
+    display: flex;
+    gap: 20px;
+}
+
+.part_2 > * {
+    flex: 1;
+    padding: 20px;
+}
+
+.part_2 .title {
+    font-weight: 500;
+}
+
+.list_trans {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
 }
